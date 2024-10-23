@@ -1,0 +1,32 @@
+acl trustedclients {
+  10.0.0.0/24;
+  10.0.10.0/24;
+  localhost;
+  localnets;
+};
+
+options {
+  directory "/var/cache/bind";
+  forwarders {
+    1.1.1.1;
+    1.1.0.0;
+  };
+
+//  recursion no;			// disabled recursion on authoritative DNS server
+  allow-recursion { trustedclients; };
+//  allow-transfer { trustedclients; }; 	// disallow zone transfer
+  allow-query { trustedclients; };
+  allow-update { none; };
+ 
+  // dnssec-validation auto;
+  // dnssec-enable yes;
+  // dnssec-validation yes;
+  // dnssec-lookaside auto;
+
+  auth-nxdomain no;    # conform to RFC1035
+  listen-on-v6 { any; };
+
+  // hide version number.
+  version none;
+};
+

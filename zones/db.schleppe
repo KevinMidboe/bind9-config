@@ -1,0 +1,98 @@
+$ORIGIN .
+$TTL 900	; 15 minutes
+schleppe		IN SOA	ns1.schleppe. root.schleppe. (
+				28         ; serial
+				900        ; refresh (15 minutes)
+				900        ; retry (15 minutes)
+				604800     ; expire (1 week)
+				900        ; minimum (15 minutes)
+				)
+			NS	ns1.schleppe.
+			NS	ns2.schleppe.
+$ORIGIN schleppe.
+ns1			A	10.0.0.72
+ns2			A	10.0.0.98
+adam			A	10.0.0.78
+adtech			A	10.0.0.122
+allerlottis		A	10.0.0.31
+ambrosia		A	10.0.0.50
+anna			A	10.0.0.40
+ansible			A	10.0.0.56
+apc			A	10.0.0.8
+apocalypse		A	10.0.0.97
+apollo			A	10.0.0.60
+argus			A	10.0.0.136
+bestprojectever		A	10.0.0.129
+bifrost			A	10.0.0.53
+bitwarden		A	10.0.0.138
+blog			A	10.0.0.59
+bragi			A	10.0.0.76
+brewpi			A	10.0.0.102
+castdeck		A	10.0.0.57
+cerberus		A	10.0.0.80
+chip			A	10.0.0.101
+clio			A	10.0.0.77
+deichman		A	10.0.0.120
+drone			A	10.0.0.62
+duplicati		A	10.0.0.139
+elastic			A	10.0.0.55
+elastic-2		A	10.0.0.187
+elastic-3		A	10.0.0.188
+fjordmap		A	10.0.0.83
+fleet-agent-01		A	10.0.0.64
+fleet-server		A	10.0.0.63
+gambit			A	10.0.0.127
+git			A	10.0.0.37
+gjallarbru		A	10.0.0.79
+grafana			A	10.0.0.86
+headscale		A	10.0.0.143
+heimdall		A	10.0.0.30
+hitler			A	10.0.0.66
+homeassistant		A	10.0.0.82
+imgproxy		A	10.0.0.36
+immich			A	10.0.0.123
+influx			A	10.0.0.86
+irpie			A	10.0.0.100
+jelly			A	10.0.0.49
+jensmc			A	10.0.0.33
+k8s-ambrosia		A	10.0.0.151
+k8s-anna		A	10.0.0.153
+k8s-apollo		A	10.0.0.152
+k8s-cerberus		A	10.0.0.154
+k8s-lb			A	10.0.0.150
+k8s-storage		A	10.0.0.155
+kazan			A	10.0.0.150
+$ORIGIN kazan.schleppe.
+*			A	10.0.0.150
+$ORIGIN schleppe.
+kosekroken		A	10.0.0.95
+mainframe		A	10.0.0.61
+memestream		A	10.0.0.71
+mikrotik		A	10.0.0.160
+mikrotik-CRS305		A	10.0.0.160
+mikrotik-CSS326		A	10.0.0.4
+mikrotik-CSS610		A	10.0.0.5
+minecraft		A	10.0.0.65
+mondrian		A	10.0.0.32
+mosaic			A	10.0.0.38
+motd-larry		A	10.0.0.121
+planetposen		A	10.0.0.84
+plex			A	10.0.0.85
+prome			A	10.0.0.88
+router			A	10.0.0.1
+seasoned		A	10.0.0.54
+skyblock		A	10.0.0.96
+splunk			A	10.0.0.89
+tesla			A	10.0.0.35
+tibbervibber		A	10.0.0.34
+uap			A	10.0.0.3
+usw			A	10.0.0.2
+valg			A	10.0.0.87
+varnish			A	10.0.0.11
+vault			A	10.0.0.165
+vinlottis		A	10.0.0.90
+vinlottis-beta		A	10.0.0.91
+wagovipps		A	10.0.0.58
+wf-video		A	10.0.0.166
+wireguard		A	10.0.0.75
+xwiki			A	10.0.0.171

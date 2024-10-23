@@ -1,0 +1,22 @@
+controls {
+	inet 127.0.0.1 port 953
+	allow { 127.0.0.1; } keys { "rndc-key"; };
+};
+
+zone "schleppe" {
+	type master;
+	file "/etc/bind/zones/db.schleppe";
+
+	update-policy { grant tsig-key zonesub any; };
+};
+
+zone "rosendal" {
+	type master;
+	file "/etc/bind/zones/db.rosendal";
+};
+
+zone "kazan" {
+	type master;
+	file "/etc/bind/zones/db.kazan";
+};
+

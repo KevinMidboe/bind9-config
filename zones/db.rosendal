@@ -1,0 +1,24 @@
+$TTL 900
+@	IN	SOA	ns1	root (
+	        9		 ;<serial-number>
+	        900		 ;<time-to-refresh>
+	        900		 ;<time-to-retry>
+		604800		 ;<time-to-expire>
+	        900		 ;<minimum-TTL>
+ 
+	)		 
+
+;List Nameservers
+@	IN	NS	ns1.schleppe.
+@	IN	NS	ns3.schleppe.
+
+;Address to name mapping
+hera.rosendal.		IN	A	10.0.0.210
+clio.rosendal.		IN	A	10.0.0.211
+shotwell.rosendal.	IN	A	10.0.0.200
+photos.rosendal.	IN	A	10.0.0.200
+
+;Address to NS name mapping
+ns1.schleppe.	IN	A	10.0.0.72
+ns3.schleppe.	IN	A	10.0.0.72
+

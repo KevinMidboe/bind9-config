@@ -1,0 +1,23 @@
+$TTL 900
+@	IN	SOA	ns1	root (
+	        9		 ;<serial-number>
+	        900		 ;<time-to-refresh>
+	        900		 ;<time-to-retry>
+		604800		 ;<time-to-expire>
+	        900		 ;<minimum-TTL>
+ 
+	)		 
+
+;List Nameservers
+@	IN	NS	ns1.kazan.
+@	IN	NS	ns3.kazan.
+
+; Kubernetes cluster
+ctrlr-1		IN	A	10.0.0.170
+worker-1	IN	A	10.0.0.171
+worker-2	IN	A	10.0.0.172
+
+;Address to NS name mapping
+ns1.kazan.	IN	A	10.0.0.72
+ns3.kazan.	IN	A	10.0.0.72
+
