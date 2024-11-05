@@ -5,7 +5,7 @@ controls {
 
 zone "schleppe" {
 	type master;
-	file "/etc/bind/zones/db.schleppe";
+	file "/var/lib/bind/db.schleppe";
 
 	update-policy { grant tsig-key zonesub any; };
 };
